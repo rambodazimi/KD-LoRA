@@ -29,6 +29,11 @@ pip install -r requirements.txt
 ## Usage  
 Instructions for running experiments and fine-tuning models will go here.
 
+## Models  
+A selection of fine-tuned models is available on my **Hugging Face** account. You can explore and use them at the following link:  
+🔗 [https://huggingface.co/rambodazimi](https://huggingface.co/rambodazimi)
+
+
 ## Citation  
 If you find this work helpful, please consider citing our paper:
 ```bibtex
