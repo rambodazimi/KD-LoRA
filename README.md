@@ -91,6 +91,49 @@ This should cover various scenarios for fine-tuning the BERT model on different 
 A selection of fine-tuned models is available on my **Hugging Face** account. You can explore and use them at the following link:  
 🔗 [https://huggingface.co/rambodazimi](https://huggingface.co/rambodazimi)
 
+### Available Models
+
+#### BERT Base Uncased Fine-Tuned with LoRA on GLUE Tasks
+
+- **CoLA**: [bert-base-uncased-finetuned-LoRA-CoLA](https://huggingface.co/rambodazimi/bert-base-uncased-finetuned-LoRA-CoLA)
+- **MNLI**: [bert-base-uncased-finetuned-LoRA-MNLI](https://huggingface.co/rambodazimi/bert-base-uncased-finetuned-LoRA-MNLI)
+- **RTE**: [bert-base-uncased-finetuned-LoRA-RTE](https://huggingface.co/rambodazimi/bert-base-uncased-finetuned-LoRA-RTE)
+- **SST-2**: [bert-base-uncased-finetuned-LoRA-SST2](https://huggingface.co/rambodazimi/bert-base-uncased-finetuned-LoRA-SST2)
+- **WNLI**: [bert-base-uncased-finetuned-LoRA-WNLI](https://huggingface.co/rambodazimi/distilbert-base-uncased-finetuned-LoRA-WNLI)
+
+#### DeBERTa V3 Base Fine-Tuned with FFT on GLUE Tasks
+
+- **SST-2**: [deberta-v3-base-finetuned-FFT-SST2](https://huggingface.co/rambodazimi/deberta-v3-base-finetuned-FFT-SST2)
+- **QQP**: [deberta-v3-base-finetuned-FFT-QQP](https://huggingface.co/rambodazimi/deberta-v3-base-finetuned-FFT-QQP)
+
+#### RoBERTa Base Fine-Tuned with LoRA on GLUE Tasks
+
+- **MNLI**: [roberta-base-finetuned-LoRA-MNLI](https://huggingface.co/rambodazimi/roberta-base-finetuned-LoRA-MNLI)
+- **STSB**: [roberta-base-finetuned-LoRA-STSB](https://huggingface.co/rambodazimi/roberta-base-finetuned-LoRA-STSB)
+
+#### DistilBERT Base Uncased Fine-Tuned with LoRA on GLUE Tasks
+
+- **WNLI**: [distilbert-base-uncased-finetuned-LoRA-WNLI](https://huggingface.co/rambodazimi/distilbert-base-uncased-finetuned-LoRA-WNLI)
+
+#### LLama 3.8B Instruct Fine-Tuned with LoRA
+
+- **LLama 3.8B**: [llama-3-8b-Instruct-lora-cm](https://huggingface.co/rambodazimi/llama-3-8b-Instruct-lora-cm)
+
+### Usage
+
+Each model page on Hugging Face includes usage examples and configuration details. You can easily load any of these models with the Hugging Face `transformers` library:
+
+```python
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
+model = AutoModelForSequenceClassification.from_pretrained("rambodazimi/<model-name>")
+tokenizer = AutoTokenizer.from_pretrained("rambodazimi/<model-name>")
+```
+
+Replace `<model-name>` with the specific model ID, such as `bert-base-uncased-finetuned-LoRA-CoLA`.
+
+These models offer efficient fine-tuning setups and can be directly applied to downstream tasks, enabling both research and production-ready solutions. For further details and model performance, check the individual Hugging Face model pages linked above.
+
 
 ## Citation  
 If you find this work helpful, please consider citing our paper:
