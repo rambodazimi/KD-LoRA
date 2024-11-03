@@ -28,6 +28,9 @@ pip install -r requirements.txt
 
 ## Usage  
 Instructions for running experiments and fine-tuning models will go here.
+```bash
+python src/BERT.py --dataset_path ./glue/mrpc_dataset --model_name bert-base-uncased
+```
 
 ## Models  
 A selection of fine-tuned models is available on my **Hugging Face** account. You can explore and use them at the following link:  
