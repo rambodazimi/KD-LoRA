@@ -138,6 +138,15 @@ These models offer efficient fine-tuning setups and can be directly applied to d
 ## Citation  
 If you find this work helpful, please consider citing our paper:
 ```bibtex
+@misc{azimi2024kdlorahybridapproachefficient,
+      title={KD-LoRA: A Hybrid Approach to Efficient Fine-Tuning with LoRA and Knowledge Distillation}, 
+      author={Rambod Azimi and Rishav Rishav and Marek Teichmann and Samira Ebrahimi Kahou},
+      year={2024},
+      eprint={2410.20777},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.20777}, 
+}
 ```
 
 ## License  
