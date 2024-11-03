@@ -86,7 +86,6 @@ python src/BERT.py --dataset_path <DATASET_PATH> --model_name <MODEL_NAME> --lea
     ```
 
 This should cover various scenarios for fine-tuning the BERT model on different GLUE tasks using the provided arguments. Adjust the arguments as needed to customize the training process for specific tasks or datasets.
-```
 
 ## Models  
 A selection of fine-tuned models is available on my **Hugging Face** account. You can explore and use them at the following link:  
